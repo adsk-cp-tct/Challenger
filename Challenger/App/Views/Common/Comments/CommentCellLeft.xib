@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleAspectFit" selectionStyle="default" indentationWidth="10" rowHeight="92" id="KGk-i7-Jjw" customClass="CommentCellLeft" customModule="Challenger" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="346" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yhv-D1-YwE">
+                        <rect key="frame" x="10" y="0.0" width="23" height="23"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="23" id="2YY-Pn-SbB"/>
+                            <constraint firstAttribute="width" constant="23" id="NOO-uA-YM3"/>
+                        </constraints>
+                        <state key="normal" title="Button" image="default-avatar">
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                    </button>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="70A-2U-3e4">
+                        <rect key="frame" x="42" y="0.0" width="294" height="36"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="User Name: he says something" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A1z-hr-yee">
+                                <rect key="frame" x="10" y="10" width="274" height="16"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="13"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="A1z-hr-yee" secondAttribute="bottom" constant="10" id="1On-h9-93r"/>
+                            <constraint firstItem="A1z-hr-yee" firstAttribute="top" secondItem="70A-2U-3e4" secondAttribute="top" constant="10" id="LWz-4v-4Ec"/>
+                            <constraint firstItem="A1z-hr-yee" firstAttribute="leading" secondItem="70A-2U-3e4" secondAttribute="leading" constant="10" id="dZ4-lu-u78"/>
+                            <constraint firstAttribute="trailing" secondItem="A1z-hr-yee" secondAttribute="trailing" constant="10" id="l9Y-WK-mfX"/>
+                        </constraints>
+                    </view>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="comment_left_arrow" translatesAutoresizingMaskIntoConstraints="NO" id="YoI-q9-POD">
+                        <rect key="frame" x="37" y="6" width="6" height="10"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="6" id="BEv-eR-d9z"/>
+                            <constraint firstAttribute="height" constant="10" id="qd6-ys-GkQ"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <color key="backgroundColor" red="0.96862745098039216" green="0.96862745098039216" blue="0.96862745098039216" alpha="1" colorSpace="calibratedRGB"/>
+                <constraints>
+                    <constraint firstItem="70A-2U-3e4" firstAttribute="leading" secondItem="YoI-q9-POD" secondAttribute="trailing" constant="-1" id="ENz-rW-Xmq"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="70A-2U-3e4" secondAttribute="bottom" constant="49" id="ML4-fV-Plr"/>
+                    <constraint firstAttribute="trailing" secondItem="70A-2U-3e4" secondAttribute="trailing" constant="10" id="P2g-Hb-lr8"/>
+                    <constraint firstItem="YoI-q9-POD" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="6" id="Qto-lF-rKr"/>
+                    <constraint firstItem="yhv-D1-YwE" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="lmD-KM-0qR"/>
+                    <constraint firstItem="YoI-q9-POD" firstAttribute="leading" secondItem="yhv-D1-YwE" secondAttribute="trailing" constant="4" id="n5Y-8O-bfI"/>
+                    <constraint firstItem="yhv-D1-YwE" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="uk8-xF-M48"/>
+                    <constraint firstItem="70A-2U-3e4" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="voi-Ze-At7"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="ML4-fV-Plr"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="commentContentView" destination="70A-2U-3e4" id="tkJ-lG-v5f"/>
+                <outlet property="commentDetails" destination="A1z-hr-yee" id="sIf-mk-quc"/>
+                <outlet property="userAvatar" destination="yhv-D1-YwE" id="Wd9-20-2Al"/>
+            </connections>
+            <point key="canvasLocation" x="403" y="297"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="comment_left_arrow" width="6" height="10"/>
+        <image name="default-avatar" width="300" height="300"/>
+    </resources>
+</document>

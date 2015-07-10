@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ProfileViewController" customModule="Challenger" customModuleProvider="target">
+            <connections>
+                <outlet property="displayContainerView" destination="OeC-uX-t1n" id="KMi-vE-0tV"/>
+                <outlet property="displaySwitcher" destination="IvW-4o-Eid" id="cSP-hk-NSo"/>
+                <outlet property="profileBt" destination="rV8-Cp-que" id="ThN-ji-vDc"/>
+                <outlet property="userAvatar" destination="BTQ-wA-oZg" id="dGp-EB-a6e"/>
+                <outlet property="userEmail" destination="FbE-xg-5LR" id="IO4-5Y-8Hq"/>
+                <outlet property="userName" destination="eqR-VD-FAF" id="ikW-5r-YdO"/>
+                <outlet property="userTitle" destination="Or2-dE-gNf" id="Ge5-Bh-ge7"/>
+                <outlet property="view" destination="pXC-8j-QiD" id="vl1-Mc-src"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="pXC-8j-QiD">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="BTQ-wA-oZg">
+                    <rect key="frame" x="10" y="10" width="100" height="100"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="aEA-or-xAJ"/>
+                        <constraint firstAttribute="width" secondItem="BTQ-wA-oZg" secondAttribute="height" multiplier="1:1" id="jNU-S6-bd5"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eqR-VD-FAF">
+                    <rect key="frame" x="120" y="10" width="247" height="21.5"/>
+                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="18"/>
+                    <color key="textColor" red="0.070588238540000001" green="0.50980395079999996" blue="0.80784314869999996" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Or2-dE-gNf">
+                    <rect key="frame" x="120" y="41.5" width="247" height="17"/>
+                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="email" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FbE-xg-5LR">
+                    <rect key="frame" x="120" y="63.5" width="247" height="17"/>
+                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rV8-Cp-que">
+                    <rect key="frame" x="0.0" y="120" width="375" height="40"/>
+                    <color key="backgroundColor" red="0.070588238540000001" green="0.50980395079999996" blue="0.80784314869999996" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="rV8-Cp-que" secondAttribute="height" multiplier="75:8" id="Oqt-i5-g7a"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="18"/>
+                    <state key="normal" title="Edit Profile">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="doProfileAction" destination="-1" eventType="touchUpInside" id="rUk-5R-u2P"/>
+                    </connections>
+                </button>
+                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="IvW-4o-Eid">
+                    <rect key="frame" x="0.0" y="170" width="375" height="41"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="IvW-4o-Eid" secondAttribute="height" multiplier="75:8" id="lqT-TH-xfD"/>
+                    </constraints>
+                    <segments>
+                        <segment title="Registered events"/>
+                        <segment title="Posted ideas"/>
+                    </segments>
+                    <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <connections>
+                        <action selector="switchDisplayView:" destination="-1" eventType="valueChanged" id="F9A-lt-9l0"/>
+                    </connections>
+                </segmentedControl>
+                <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OeC-uX-t1n">
+                    <rect key="frame" x="0.0" y="220" width="375" height="447"/>
+                </containerView>
+            </subviews>
+            <color key="backgroundColor" red="0.96862745098039216" green="0.96862745098039216" blue="0.96862745098039216" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="eqR-VD-FAF" firstAttribute="leading" secondItem="BTQ-wA-oZg" secondAttribute="trailing" constant="10" id="0Z4-VV-kgA"/>
+                <constraint firstItem="OeC-uX-t1n" firstAttribute="leading" secondItem="pXC-8j-QiD" secondAttribute="leading" id="91G-zf-YGg"/>
+                <constraint firstItem="OeC-uX-t1n" firstAttribute="top" secondItem="IvW-4o-Eid" secondAttribute="bottom" constant="10" id="9kO-k9-JlT"/>
+                <constraint firstItem="rV8-Cp-que" firstAttribute="top" secondItem="BTQ-wA-oZg" secondAttribute="bottom" constant="10" id="EVm-xa-4tg"/>
+                <constraint firstAttribute="bottom" secondItem="OeC-uX-t1n" secondAttribute="bottom" id="EhY-Wb-krP"/>
+                <constraint firstItem="Or2-dE-gNf" firstAttribute="top" secondItem="eqR-VD-FAF" secondAttribute="bottom" constant="10" id="L83-Fu-PLX"/>
+                <constraint firstItem="eqR-VD-FAF" firstAttribute="trailing" secondItem="pXC-8j-QiD" secondAttribute="trailingMargin" id="MtJ-6a-AES"/>
+                <constraint firstItem="FbE-xg-5LR" firstAttribute="leading" secondItem="Or2-dE-gNf" secondAttribute="leading" id="No1-N5-Mff"/>
+                <constraint firstItem="FbE-xg-5LR" firstAttribute="trailing" secondItem="pXC-8j-QiD" secondAttribute="trailingMargin" id="OUq-Iw-FU6"/>
+                <constraint firstItem="Or2-dE-gNf" firstAttribute="leading" secondItem="BTQ-wA-oZg" secondAttribute="trailing" constant="10" id="Tfi-tc-24H"/>
+                <constraint firstItem="rV8-Cp-que" firstAttribute="leading" secondItem="pXC-8j-QiD" secondAttribute="leading" id="VHO-4p-v60"/>
+                <constraint firstItem="BTQ-wA-oZg" firstAttribute="leading" secondItem="pXC-8j-QiD" secondAttribute="leading" constant="10" id="VQI-b5-hQ2"/>
+                <constraint firstAttribute="trailing" secondItem="eqR-VD-FAF" secondAttribute="trailing" constant="10" id="XMv-0Z-AGX"/>
+                <constraint firstItem="BTQ-wA-oZg" firstAttribute="top" secondItem="eqR-VD-FAF" secondAttribute="top" id="cmQ-6P-MJS"/>
+                <constraint firstItem="FbE-xg-5LR" firstAttribute="top" secondItem="Or2-dE-gNf" secondAttribute="bottom" constant="5" id="dy6-hV-pRa"/>
+                <constraint firstItem="BTQ-wA-oZg" firstAttribute="top" secondItem="pXC-8j-QiD" secondAttribute="top" constant="10" id="fs7-mb-4qX"/>
+                <constraint firstAttribute="trailing" secondItem="OeC-uX-t1n" secondAttribute="trailing" id="iST-fO-HoV"/>
+                <constraint firstItem="IvW-4o-Eid" firstAttribute="leading" secondItem="pXC-8j-QiD" secondAttribute="leading" id="ifw-4X-lnL"/>
+                <constraint firstItem="Or2-dE-gNf" firstAttribute="leading" secondItem="eqR-VD-FAF" secondAttribute="leading" id="kvz-cE-nI6"/>
+                <constraint firstItem="Or2-dE-gNf" firstAttribute="trailing" secondItem="pXC-8j-QiD" secondAttribute="trailingMargin" id="osb-fB-Xce"/>
+                <constraint firstAttribute="trailing" secondItem="IvW-4o-Eid" secondAttribute="trailing" id="sny-DX-Fkx"/>
+                <constraint firstItem="IvW-4o-Eid" firstAttribute="top" secondItem="rV8-Cp-que" secondAttribute="bottom" constant="10" id="vIL-1M-5zM"/>
+                <constraint firstAttribute="trailing" secondItem="rV8-Cp-que" secondAttribute="trailing" id="xC1-fS-GFi"/>
+                <constraint firstAttribute="trailingMargin" secondItem="eqR-VD-FAF" secondAttribute="trailing" id="xki-AL-EAq"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="MtJ-6a-AES"/>
+                    <exclude reference="XMv-0Z-AGX"/>
+                    <exclude reference="Tfi-tc-24H"/>
+                </mask>
+            </variation>
+        </view>
+    </objects>
+</document>

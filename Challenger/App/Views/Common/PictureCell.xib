@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleAspectFit" selectionStyle="default" indentationWidth="10" rowHeight="249" id="EKS-ZL-dy7" customClass="PictureCell" customModule="Challenger" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="249"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="EKS-ZL-dy7" id="Iob-DW-X3p">
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2zn-Dh-6e8">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="248"/>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="2zn-Dh-6e8" firstAttribute="leading" secondItem="Iob-DW-X3p" secondAttribute="leading" id="AKL-YU-Zmh"/>
+                    <constraint firstAttribute="bottom" secondItem="2zn-Dh-6e8" secondAttribute="bottom" id="IkR-RY-GKc"/>
+                    <constraint firstAttribute="trailing" secondItem="2zn-Dh-6e8" secondAttribute="trailing" id="OXt-sw-qje"/>
+                    <constraint firstItem="2zn-Dh-6e8" firstAttribute="top" secondItem="Iob-DW-X3p" secondAttribute="top" id="VQK-dx-n6l"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="pictureView" destination="2zn-Dh-6e8" id="yQp-Ed-Bae"/>
+            </connections>
+            <point key="canvasLocation" x="65" y="616.5"/>
+        </tableViewCell>
+    </objects>
+</document>
